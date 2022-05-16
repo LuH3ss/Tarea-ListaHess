@@ -1,0 +1,45 @@
+<section>
+    <div>
+        <div class="lista-tittle"><h1>Lista de Ingresantes 2022</h1></div>
+        <div class="lista-alumnos" *ngFor="let ingresante of estudiantes">
+            
+            <p *ngIf="ingresante.estado == 'Inscripto'" [ngClass]="ingresante.estado == 'Inscripto' ? 'ins' : 'error'">
+                <label for="nombre">Nombre:</label>
+                {{ingresante.nombre}}
+                <label for="edad">Edad:</label>
+                {{ingresante.edad}}
+                <label for="curso">Curso:</label>
+                {{ingresante.curso}}
+                <label for="estado">Estado:</label>
+                {{ingresante.estado | uppercase}}
+                <label for="observaciones">Observaciones:</label>
+                {{ingresante.observaciones}}
+            </p>
+            <p *ngIf="ingresante.estado == 'Pendiente'" [ngClass]="ingresante.estado == 'Pendiente' ? 'pen' : 'error'">
+                <label for="nombre">Nombre:</label>
+                {{ingresante.nombre}}
+                <label for="edad">Edad:</label>
+                {{ingresante.edad}}
+                <label for="curso">Curso:</label>
+                {{ingresante.curso}}
+                <label for="estado">Estado:</label>
+                {{ingresante.estado | uppercase}}
+                <label for="observaciones">Observaciones:</label>
+                {{ingresante.observaciones}}
+            </p>
+            <p *ngIf="ingresante.estado == 'Rechazado'"
+            [ngClass]="ingresante.estado == 'Rechazado' ? 'noins' : 'error'">
+                <label for="nombre">Nombre:</label>
+                {{ingresante.nombre}}
+                <label for="edad">Edad:</label>
+                {{ingresante.edad}}
+                <label for="curso">Curso:</label>
+                {{ingresante.curso}}
+                <label for="estado">Estado:</label>
+                {{ingresante.estado | uppercase}}
+                <label for="observaciones">Observaciones:</label>
+                {{ingresante.observaciones}}
+            </p>
+        </div>
+    </div>
+</section>

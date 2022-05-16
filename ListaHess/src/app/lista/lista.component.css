@@ -1,0 +1,35 @@
+section {
+    height: 100%;
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lista-tittle {
+    text-align: center;
+
+}
+.lista-alumnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.ins {
+    background-color: rgba(78, 225, 176, 0.741);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.noins {
+    background-color: rgba(220, 20, 60, 0.652);
+    display: flex;
+    flex-direction: column;
+}
+
+.pen {
+    background-color: rgba(78, 185, 188, 0.766);
+    display: flex;
+    flex-direction: column;
+}
